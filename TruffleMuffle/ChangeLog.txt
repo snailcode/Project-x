@@ -1,0 +1,37 @@
+Datum: 07.04.2014
+	- GoldenMuffin Spawnrate von 10% auf 2% gesenkt
+	- GoldenMuffin Effekt vom 10 auch 8 Sekunden gesenkt
+	- Beim Einsammeln eines GoldenMuffins erhält man zusätzlich
+	  drei Punkte
+
+Datum: 06.04.2014
+	- Beschreibung zu jedem Muffin im Startbildschirm hinzugefügt.
+	  => showDescription (Klasse: GameView)
+
+Datum: 05.04.2014
+	- Grafik für Bubble hinzugefügt
+	- Token wurde zu den Muffins hinzugefügt
+	- Spieler hat eine Variable erhalten, an der man sehen kann, welche Muffinart zuletzt
+	  eingesammelt wurde
+	- Goldener Muffin wurde implementiert.
+	  Der Effekt wird nicht gestackt, dass bedeutet, dass wenn bereits ein goldener Muffin eingesammelt
+      wurde, der Effekt bei einem erneuten einsammeln nicht noch einmal getriggert wird.
+	  Dies geschieht erst, wenn der Effekt vorbei ist.
+	  Der Effekt verschwindet nach 10 Sekunden, oder wenn man einen schwarzen Muffin einsammelt.
+	  Der Effekt des schwarzen Muffins wird hierbei ignoriert.
+	  Spawnen tut dieser mit einer 10%igen Wahrscheinlichkeit, welche ich noch zu viel finde.
+
+Datum: 04.04.2014
+	- Der Fehler mit dem GameOver - Screen wurde nun überarbeitet. Es wird nun, nachdem der
+	  Spieler keine Leben mehr hat, die Spielschleife einfach verlassen -> setRunning(false).
+
+Datum: 02.04.2014
+	- GameOver screen wird nun angezeigt (-> Überarbeiten!!)
+
+Datum: 31.03.2014
+	- Schwarze Muffins reduzieren die Punkte nur noch um 20%
+	- Tab to Play wurde implementiert
+	- Das zeichnen für das grundlegende Spiel wurde in eine Methode ausgelagert
+	- Nicht verwendete Imports wurden entfernt (die gingen mir langsam auf den Sack xD)
+	- Grundlage des Pause - Status wurde implementiert. Wenn man nun oben rechts den Bildschirm berührt,
+	  so wird das Spiel pausiert.

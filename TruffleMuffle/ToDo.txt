@@ -1,0 +1,30 @@
+Datum: 09.04.
+	-> Hab die Datei Dimen.xml bearbeitet. Dort kannst du einfach eine neue <dimen>
+	   hinzufügen und bei setTextSize() übergeben:
+	   bla.setTextSize(getResources().setDimensionfromPixel(R.dimen.nameVonDimen))
+	   android rechnet die angaben in sp automatisch für das entsprechende Display um
+
+Datum: 06.04.2014
+	- Feuerwerk implementieren => anzeigen bei einem neuen Highscore
+	- Schriften überarbeiten, so dass es auf jedem Bildschirm gleich
+	  aussieht
+
+Datum: 02.04.2014
+	- System.exit(0) funktioniert nicht. Auf verschiedenen Systemen wird das game dann
+	  einfach beendet, was dazu geführt hat, das kein GameOverScreen angezeigt wurde.
+	  Die momentane Lösung ist nur temporär und sollte überarbeitet werden.
+	  Die Stelle ist mit einem //TODO gekennzeichnet (Klasse: GameView, Abgfrage bei den Leben)
+	  
+	  Fehler: Lässt man das System.exit(0), so werden kontinuierlich weitere Gameover screens
+	  	      erstellt, was irgendwann zu einem abbruch führt.
+	  	      
+	  Nachtrag: Fehler wurde behoben.
+
+Datum: 31.03.2014
+	- Gameover Screen überprüfen -> Abstürze auf Emulatoren und anderen Handys	-> Erledigt (Siehe ChangeLog)
+	- Kombos im Screen einblenden, bzw. durch den Screen laufen lassen
+	- Kombos mit Sounds verbinden
+	- Alle Sounds hinzufügen
+	- Pause Funktion implementieren -> verfeinern
+	- Grafiken überarbeiten
+	
